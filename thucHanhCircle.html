@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thuc hanh circle</title>
+</head>
+<body>
+<script>
+  class Circle{
+    constructor(bankinh, mausac) {
+      this.radius = bankinh;
+      this.color = mausac;
+    }
+    getDienTich(){
+      return Math.PI*this.radius*this.radius;
+    }
+    getBanKinh(){
+      return this.radius;
+    }
+  }
+
+  let a = new Circle(5,"red");
+  document.write("Ban kinh : &nbsp;"+a.radius +"<br>");
+  document.write("mau sac : &nbsp;" +a.color +"<br>")
+  document.write("dien tich hinh tron:"+ a.getDienTich() + "<br>");
+  document.write("Ban kinh :"+ a.getBanKinh());
+</script>
+</body>
+</html>
