@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>xay dung date</title>
+</head>
+<body>
+<script>
+  class myDate {
+    constructor(day,month,year) {
+      this.day = day;
+      this.month = month;
+      this.year = year;
+    }
+    getDay(){
+      return this.day;
+    }
+    getMonth(){
+      return this.month;
+    }
+    getYear(){
+      return this.year;
+    }
+    setDay(day2){
+      this.day = day2;
+    }
+    setMonth(month2){
+      this.month = month2;
+    }
+    setYear(year2){
+      this.year = year2;
+    }
+    toString(){
+      return this.day+"/"+this.month+"/"+this.year;
+    }
+  }
+  let Date = new myDate(2,2,2007);
+  let day = Date.getDay();
+  let month = Date.getMonth();
+  let year = Date.getYear();
+  document.write("Ngay&nbsp;"+ Date.getDay() + "&nbsp;thang &nbsp;" + Date.getMonth() + "&nbsp;nam &nbsp" + Date.getYear() +"<br>");
+
+  Date.setDay(10);
+  Date.setMonth(10);
+  Date.setYear(2020);
+  document.write("Ngay&nbsp;"+ Date.getDay() + "&nbsp;thang &nbsp;" + Date.getMonth() + "&nbsp;nam &nbsp" + Date.getYear() +"<br>");
+
+  document.write(Date.toString());
+</script>
+</body>
+</html>
