@@ -5,7 +5,7 @@ class Cat{
     this.speed = speed;
   }
   sound(text){
-    alert(this.name + text);
+    alert(this.name + "  " + text);
   }
   touchMouse(mouse){
     if (this.speed > mouse.speed){

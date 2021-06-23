@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hinh Chu nhat</title>
+</head>
+<body>
+<canvas id="myCanvas" width="150px" height="100px" style="border:3px solid yellow"></canvas>
+<script>
+  class Rectangle{
+        constructor(chieuDai, chieuRong) {
+          this.chieudai = chieuDai;
+          this.chieurong = chieuRong;
+        }
+        chuVi(){
+          return (this.chieudai + this.chieurong)*2;
+        }
+        dienTich(){
+          return (this.chieurong*this.chieurong);
+        }
+  }
+  function creatRectangle(){
+    let hinhChuNhat = new Rectangle(10,20);
+    let ctx = document.getElementById("myCanvas").getContext("2d");
+    ctx.beginPath();
+    ctx.rect(0, 0, 150, 100);
+    ctx.
+    ctx.fillStyle = "green";
+    ctx.fill();
+    ctx.stroke();
+    document.write("<br>"+"Dien tich hinh chu nhat la: "+hinhChuNhat.dienTich() +"<br>");
+    document.write("Chu vi hinh chu nhat la: "+hinhChuNhat.chuVi() +"<br>");
+  }
+  creatRectangle();
+
+</script>
+</body>
+</html>

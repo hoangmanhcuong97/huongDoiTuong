@@ -6,7 +6,7 @@ class Mouse{
     this.status = true;
   }
   sound(text){
-    alert(this.name + "" + text);
+    alert(this.name + " " + text);
   }
 
 }
