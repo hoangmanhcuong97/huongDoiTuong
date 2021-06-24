@@ -20,14 +20,16 @@
         }
   }
   function creatRectangle(){
-    let hinhChuNhat = new Rectangle(10,20);
+    let x = +prompt("Nhap gia tri chieu dai:");
+    let y = +prompt("Nhap gia tri chieu rong:");
     let ctx = document.getElementById("myCanvas").getContext("2d");
     ctx.beginPath();
     ctx.rect(0, 0, 150, 100);
-    ctx.
     ctx.fillStyle = "green";
     ctx.fill();
     ctx.stroke();
+
+    let hinhChuNhat = new Rectangle(x,y);
     document.write("<br>"+"Dien tich hinh chu nhat la: "+hinhChuNhat.dienTich() +"<br>");
     document.write("Chu vi hinh chu nhat la: "+hinhChuNhat.chuVi() +"<br>");
   }

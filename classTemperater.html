@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Temperater</title>
+</head>
+<body>
+<script>
+  class Temperater{
+    constructor(doC) {
+      this.doC = doC;
+    }
+    doF(){
+      return 9/5 * this.doC + 32;
+    }
+    kenvin(){
+      return this.doC + 273.15;
+    }
+  }
+  let chuyenDoi =  new Temperater(30);
+  document.write("Do F da chuyen doi la: "+ chuyenDoi.doF()+"<br>");
+  document.write("Do kenvin da chuyen doi la: "+chuyenDoi.kenvin() +"<br>");
+</script>
+</body>
+</html>
